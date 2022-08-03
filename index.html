@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Survey Form Project for LetItGo App">
+    <meta name="author" content="Nuray Saglam Bedir">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LetItGo App Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <h1 id="title">LetItGo App Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the LetItGo App</p>
+    <main id="main">
+      <form id="survey-form">
+        <div>
+          <label id="name-label" for="name">Name<label><br>
+          <input class="customer-info" id="name" type="text" placeholder="Enter your name" required>
+        </div>
+
+        <div>
+          <label id="email-label" for="email"> Email</label><br>
+          <input class="customer-info" id="email" type="email" placeholder="Enter your email" required>
+        </div>
+
+        <div>
+          <label id="number-label" for="number"> Age (Optional)</label><br>
+          <input class="customer-info" id="number" type="number" min="13" max="99" placeholder="Age" required>
+        </div>
+
+        <div>
+            <p>Which option best describes your current role in the App?</p>
+            <select class="customer-info" id="dropdown" name="role" required>
+              <option disapled selected value>Choose your current role in the App </option>
+              <option value="customer">Customer</option>
+              <option value="driver">Driver</option>
+            </select>
+        </div>
+
+        <div>
+            <p>What is your favorite feature of LetItGo App?</p>
+            <select class="customer-info" id="most-like" name="customer-most-liked" required>
+              <option disapled selected value >Please choose an option</option>
+              <option value="delivery">Delivery</option>
+              <option value="handy-man">Handy Man</option>
+              <option value="recycle">Recycle</option>
+              <option value="house-relocation">House relocation</option>
+              <option value="garden-care">Garden care</option>
+            </select>
+        </div>
+
+        <div>
+            <p> Would you recommend LetItGo App to a friend? </p>
+            <input id="definitely" type="radio" name="user-recommend" value="definitely" checked> <label for="definitely">Definitely<label> <br>
+            <input id="maybe" type="radio" name="user-recommend" value="maybe"> <label for="maybe">Maybe<label> <br>
+            <input id="not-sure" type="radio" name="user-recommend" value="not-sure"> <label for="not-sure">Not sure<label>
+        </div>
+
+        <div>
+            <p>What would you like to see improved? (Check all that apply)</p>
+            <input id="delivery-service" type="checkbox" name="user-recommend" value="delivery-service"> <label for="definitely">Delivery service<label> <br>
+            <input id="handy-man-service" type="checkbox" name="user-recommend" value="handy-man-service"> <label for="maybe"> Handy Man service <label> <br>
+            <input id="recycle-service" type="checkbox" name="user-recommend" value="recycle-service"> <label for="not-sure">Recycle service <label><br>
+            <input id="house-relocation-service" type="checkbox" name="user-recommend" value="house-relocation-service"> <label for="not-sure">House relocation service<label><br>
+            <input id="garden-care-service" type="checkbox" name="user-recommend" value="garden-care-service"> <label for="not-sure">Garden care service<label><br>
+        </div>
+
+        <div class="customer-comments">
+            <p>Any comments or suggestions?</p>
+            <textarea name= "customer-comments" id="comments" cols="50" rows="5" placeholder="Enter your comments here" spellcheck="false"></textarea>
+        </div>
+
+        <button id="submit" type="submit">Submit</button>
+
+      </form>
+    </main>
+    <footer>
+      <p>Web design by <a href="https://www.linkedin.com/in/nuray-saglam-bedir-09947452/">Nuray Saglam Bedir</a></p>
+    </footer>
+  </body>
+</html>
